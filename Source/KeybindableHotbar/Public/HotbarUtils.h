@@ -16,9 +16,6 @@ class KEYBINDABLEHOTBAR_API UHotbarUtils : public UBlueprintFunctionLibrary
 	GENERATED_BODY()
 
 	UFUNCTION(BlueprintCallable)
-	static void SetHotbarIndex(AFGPlayerController* player, int index)
-	{
-		player->SetHotbarIndex(index);
-	}
+	static void SetHotbarIndex(AFGPlayerController* player, int index) { player->SetHotbarIndex(index); }
 	
 };
