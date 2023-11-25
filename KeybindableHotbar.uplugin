@@ -1,10 +1,10 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.0.1",
-	"SemVersion": "1.0.1",
+	"VersionName": "1.0.2",
+	"SemVersion": "1.0.2",
 	"FriendlyName": "KeybindableHotbar",
-	"Description": "Allows you to bind hotbar to a key.",
+	"Description": "Allows you to bind each hotbar to a key.",
 	"Category": "Modding",
 	"CreatedBy": "Scordium (Topaz#6700)",
 	"CreatedByURL": "",
@@ -26,7 +26,7 @@
 	"Plugins": [
 		{
 			"Name": "SML",
-			"SemVersion": "^3.5.1",
+			"SemVersion": "^3.6.0",
 			"bIsOptional": false,
 			"Enabled": true
 		}

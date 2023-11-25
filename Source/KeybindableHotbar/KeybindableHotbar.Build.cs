@@ -1,6 +1,4 @@
 using UnrealBuildTool;
-using System.IO;
-using System;
 
 public class KeybindableHotbar : ModuleRules
 {
@@ -28,7 +26,6 @@ public class KeybindableHotbar : ModuleRules
 		    "AIModule",
 		    "GameplayTasks",
 		    "SlateCore", "Slate", "UMG",
-		    "InstancedSplines",
 		    "RenderCore",
 		    "CinematicCamera",
 		    "Foliage",
@@ -38,8 +35,6 @@ public class KeybindableHotbar : ModuleRules
 		    "TemplateSequence",
 		    "NetCore",
 		    "GameplayTags",
-		    "AudioMixer",
-		    "Synthesis"
 	    });
 
 	    // FactoryGame plugins
@@ -55,7 +50,7 @@ public class KeybindableHotbar : ModuleRules
 	    });
 
 	    if (Target.Type == TargetRules.TargetType.Editor) {
-		    PublicDependencyModuleNames.AddRange(new string[] {"OnlineBlueprintSupport", "AnimGraph", "SynthesisEditor", "AssetRegistry"});
+		    PublicDependencyModuleNames.AddRange(new string[] {"OnlineBlueprintSupport", "AnimGraph"});
 	    }
 	    PublicDependencyModuleNames.AddRange(new string[] {"FactoryGame", "SML"});
     }
